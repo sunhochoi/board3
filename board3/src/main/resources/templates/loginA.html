@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="login-wrapper">
+  <h2>Login</h2>
+  <form method="post" action="/loginB" id="login-form">
+    <input type="text" name="userId" placeholder="Email">
+    <input type="password" name="userPwd"  placeholder="Password">
+    <label for="remember-check">
+      <input type="checkbox" id="Login">
+    </label>
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+</body>
+</html>
